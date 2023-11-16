@@ -1,0 +1,64 @@
+name: Release
+
+on:
+    push:
+        branches:
+            - main
+            - homolog
+
+permissions:
+    contents: write
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+                  token: ${{ secrets.GH_TOKEN }}
+
+            - run: corepack enable
+
+            - uses: oven-sh/setup-bun@v1
+              with:
+                  bun-version: latest
+
+            - name: Install dependencies
+              run: bun i
+
+            - name: Run semantic-release
+              run: bunx semantic-release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+            - name: Update homolog branch
+              if: ${{ github.ref != 'refs/heads/homolog' }}
+              run: |
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com  
+
+                  echo "[DEBUG] current branch: $(git rev-parse --abbrev-ref HEAD)"
+                  echo "[DEBUG] current commits: "
+                  git --no-pager log -10 --oneline
+
+                  git fetch origin homolog
+                  echo "[DEBUG] commits on homolog:"
+                  git --no-pager log -10 --oneline origin/homolog
+
+                  echo "[DEBUG] rebasing origin/homolog into $(git rev-parse --abbrev-ref HEAD)"
+                  git rebase origin/homolog -X ours --committer-date-is-author-date
+
+                  echo "[DEBUG] commits on $(git rev-parse --abbrev-ref HEAD) after rebase:"
+                  git --no-pager log -10 --oneline
+
+                  git push origin main -f
+
+                  gh pr create \
+                    --base homolog \
+                    --head main \
+                    --title 'chore: updates homolog environment' \
+                    --body 'This PR was automatically created by Github Actions'
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
