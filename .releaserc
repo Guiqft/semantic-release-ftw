@@ -1,6 +1,58 @@
 {
     "branches": [
+        "+([0-9])?(.{+([0-9]),x}).x",
         "main",
-        "dev"
+        {
+            "name": "dev",
+            "prerelease": true
+        },
+        {
+            "name": "homolog",
+            "prerelease": true
+        }
+    ],
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        // [
+        //     "@semantic-release/changelog",
+        //     {
+        //         "changelogFile": "CHANGELOG.md",
+        //         "changelogTitle": "# Semantic Versioning Changelog"
+        //     }
+        // ],
+        [
+            "@semantic-release/npm",
+            {
+                "npmPublish": false,
+                "tarballDir": "dist"
+            }
+        ],
+        // [
+        //     "@semantic-release/exec",
+        //     {
+        //         "prepareCmd": "echo 'new version ${nextRelease.version}'"
+        //     }
+        // ],
+        // [
+        //     "@semantic-release/git",
+        //     {
+        //         "assets": [
+        //             "package.json",
+        //             "CHANGELOG.md"
+        //         ]
+        //     }
+        // ],
+        [
+            "@semantic-release/github",
+            {
+                "assets": [
+                    {
+                        "path": "dist/**"
+                    }
+                ],
+                "draftRelease": true
+            }
+        ]
     ]
 }
