@@ -1,0 +1,44 @@
+name: Release
+
+on:
+    push:
+        branches:
+            - main
+            - homolog
+
+permissions:
+    contents: write
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+                  token: ${{ secrets.GH_TOKEN }}
+
+            - run: corepack enable
+
+            - uses: oven-sh/setup-bun@v1
+              with:
+                  bun-version: latest
+
+            - name: Install dependencies
+              run: bun i
+
+            - name: Run semantic-release
+              id: run-semantic-release
+              run: bunx semantic-release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+            - name: Update homolog branch
+              if: ${{ github.ref != 'refs/heads/homolog' && steps.run-semantic-release.outputs.new-release-published == 'true' }}
+              run: |
+                  git branch -D homolog
+                  git checkout -b homolog
+                  git push origin homolog -f
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
