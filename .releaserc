@@ -3,8 +3,7 @@
         "+([0-9])?(.{+([0-9]),x}).x",
         "main",
         {
-            "name": "dev",
-            "prerelease": "dev"
+            "name": "dev"
         },
         {
             "name": "homolog",
