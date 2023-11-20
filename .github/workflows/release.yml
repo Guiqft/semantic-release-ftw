@@ -26,5 +26,7 @@ jobs:
             - name: Run semantic-release
               run: |
                   bunx semantic-release
+                  cat package.json
+                  cat CHANGELOG.md
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

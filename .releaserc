@@ -4,7 +4,7 @@
         "main",
         {
             "name": "dev",
-            "prerelease": true
+            "prerelease": "dev"
         },
         {
             "name": "homolog",
@@ -18,7 +18,8 @@
             "@semantic-release/git",
             {
                 "assets": [
-                    "package.json"
+                    "package.json",
+                    "CHANGELOG.md"
                 ]
             }
         ],
