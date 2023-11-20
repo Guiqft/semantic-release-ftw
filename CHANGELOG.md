@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [1.2.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0) (2023-11-21)
 
 
@@ -55,6 +56,8 @@
 
 * testing 13 ([4408db9](https://github.com/Guiqft/semantic-release-ftw/commit/4408db9f15040c06da2c642840f70db5c1fef092))
 
+=======
+>>>>>>> 6b3c40b (chore(release): 1.1.0-dev.2 [skip ci])
 # [1.1.0-dev.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2023-11-20)
 
 
