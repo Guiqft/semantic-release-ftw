@@ -1,0 +1,21 @@
+on:
+    workflow_dispatch:
+        inputs:
+            releaseType:
+                description: "Release Type"
+                required: true
+                default: "rc"
+                type: choice
+                options:
+                    - rc
+                    - latest
+
+jobs:
+    log-the-inputs:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                  echo "releaseType: $RELEASE_TYPE"
+                  echo "branch: $GITHUB_REF"
+        env:
+            LEVEL: ${{ inputs.releaseType }}
