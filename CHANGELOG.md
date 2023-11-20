@@ -6,8 +6,23 @@
 * build npm ([b5ace9e](https://github.com/Guiqft/semantic-release-ftw/commit/b5ace9e314ec3f5cd2bce17f60a871ac22a3696f))
 * changelog ([d9fcdb6](https://github.com/Guiqft/semantic-release-ftw/commit/d9fcdb67757029cb55330374f579291a12537921))
 * foo ([253cf7f](https://github.com/Guiqft/semantic-release-ftw/commit/253cf7f7a47e2d70625a597f0b2e9339cee3dcb9))
+* testing 10 ([0fa817c](https://github.com/Guiqft/semantic-release-ftw/commit/0fa817c41afb42134dc2f6afee2a8322869e3c6d))
 * testing 7 ([9ed82bd](https://github.com/Guiqft/semantic-release-ftw/commit/9ed82bdf133f724ac10aef83fe5bb330b5aefd03))
 * testing 8 ([d6b2fab](https://github.com/Guiqft/semantic-release-ftw/commit/d6b2fab6a3a18cc46cee2f7fcf80e4c8918cfb38))
+* testing 9 ([9a54f64](https://github.com/Guiqft/semantic-release-ftw/commit/9a54f64881d5031d8cbc9b80483131680b6c3af4))
+* testing 9 ([4e72b31](https://github.com/Guiqft/semantic-release-ftw/commit/4e72b31371bd51ffedf2e18ba46a2abd7c9658da))
+
+# [1.1.0-dev.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2023-11-20)
+
+
+### Features
+
+* build npm ([b5ace9e](https://github.com/Guiqft/semantic-release-ftw/commit/b5ace9e314ec3f5cd2bce17f60a871ac22a3696f))
+* changelog ([d9fcdb6](https://github.com/Guiqft/semantic-release-ftw/commit/d9fcdb67757029cb55330374f579291a12537921))
+* foo ([253cf7f](https://github.com/Guiqft/semantic-release-ftw/commit/253cf7f7a47e2d70625a597f0b2e9339cee3dcb9))
+* testing 7 ([9ed82bd](https://github.com/Guiqft/semantic-release-ftw/commit/9ed82bdf133f724ac10aef83fe5bb330b5aefd03))
+* testing 8 ([d6b2fab](https://github.com/Guiqft/semantic-release-ftw/commit/d6b2fab6a3a18cc46cee2f7fcf80e4c8918cfb38))
+* testing 9 ([a80f7f4](https://github.com/Guiqft/semantic-release-ftw/commit/a80f7f49e8d0e75a1ba9e243f70cecafaf5b7f43))
 
 # [1.1.0-dev.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-dev.1...v1.1.0-dev.2) (2023-11-20)
 
