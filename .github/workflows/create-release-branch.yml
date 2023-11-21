@@ -41,7 +41,7 @@ jobs:
 
                   git checkout origin/${GITHUB_REF##*/}
                   git pull origin ${GITHUB_REF##*/}
-                  git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} -X theirs --committer-date-is-author-date
+                  git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} -X ours --committer-date-is-author-date
 
             - uses: oven-sh/setup-bun@v1
               with:
@@ -86,7 +86,7 @@ jobs:
 
                     git checkout origin/${GITHUB_REF##*/}
                     git pull origin ${GITHUB_REF##*/}
-                    git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X theirs --committer-date-is-author-date
+                    git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date
 
                     git checkout -b $RELEASE_BRANCH
                     git push origin $RELEASE_BRANCH -f
