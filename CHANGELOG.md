@@ -1,3 +1,15 @@
+# [1.1.0-rc.11](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.10...v1.1.0-rc.11) (2023-11-21)
+
+
+### Bug Fixes
+
+* qualquer coisa ([1654420](https://github.com/Guiqft/semantic-release-ftw/commit/165442055bc4815a7b0e4627814f80f4c5047f90))
+
+
+### Features
+
+* chefe ([e4d1af5](https://github.com/Guiqft/semantic-release-ftw/commit/e4d1af5c7ac95843d2c11d5b02daa6603b0e718c))
+
 # [1.1.0-rc.10](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.9...v1.1.0-rc.10) (2023-11-21)
 
 
