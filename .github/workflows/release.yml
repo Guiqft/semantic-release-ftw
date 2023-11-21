@@ -3,9 +3,10 @@ name: Release
 on:
     push:
         branches:
-            - dev
-            - main
-            - homolog
+            - foo
+            # - dev
+            # - main
+            # - homolog
 
 permissions:
     contents: write
