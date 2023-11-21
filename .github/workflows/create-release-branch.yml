@@ -20,13 +20,7 @@ jobs:
             - uses: actions/checkout@v4
               with:
                   fetch-depth: 0
-            - name: Checkout Branch
-              run: |
-                  if [ "${{ github.event.inputs.releaseType }}" == "rc" ]; then
-                      git checkout homolog
-                  elif [ "${{ github.event.inputs.releaseType }}" == "latest" ]; then
-                      git checkout main
-                  fi
+                  ref: ${{ github.event.inputs.releaseType == 'rc' && 'homolog' || github.event.inputs.releaseType == 'latest' && 'main' }}
 
             - uses: oven-sh/setup-bun@v1
               with:
