@@ -39,18 +39,10 @@ jobs:
               run: |
                   git config user.name github-actions
                   git config user.email github-actions@github.com
-                  echo "before pull"
-                  git --no-pager log -5 --oneline
-                  git pull origin ${{ steps.set-brach-name.outputs.BRANCH_NAME }}
 
-                  echo "after pull"
-                  git --no-pager log -5 --oneline
-
-                  git fetch origin dev
-                  git rebase origin/dev
-
-                  echo "after rebase dev"
-                  git --no-pager log -5 --oneline
+                  git checkout origin/dev
+                  git pull origin dev
+                  git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }}
 
             - uses: oven-sh/setup-bun@v1
               with:
