@@ -18,6 +18,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Set Branch Name
+              id: set-brach-name
               run: |
                   if [ "${{ github.event.inputs.releaseType }}" == "rc" ]; then
                       echo "BRANCH_NAME=homolog" >> $GITHUB_ENV
@@ -53,12 +54,14 @@ jobs:
             - uses: actions/checkout@v3
             - name: Create Release Branch
               run: |
+                  git status
                   RELEASE_BRANCH=release/v${{ needs.get-next-version.outputs.new-release-version }}
                   git checkout $RELEASE_BRANCH 2>/dev/null || git checkout -b $RELEASE_BRANCH
 
             - name: pull-request
               run: |
+                  echo $BRANCH_NAME
                   RELEASE_BRANCH=release/v${{ needs.get-next-version.outputs.new-release-version }}
-                  gh pr create --base main --head $RELEASE_BRANCH  --title 'chore: release  ${{ needs.get-next-version.outputs.new-release-version }}' --body 'Created by Github action'
+                  gh pr create --base $BRANCH_NAME --head $RELEASE_BRANCH  --title 'chore: release  ${{ needs.get-next-version.outputs.new-release-version }}' --body 'Created by Github action'
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
