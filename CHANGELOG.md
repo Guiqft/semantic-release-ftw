@@ -1,3 +1,23 @@
+# [1.2.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0) (2023-11-21)
+
+
+### Bug Fixes
+
+* foo ([6f34960](https://github.com/Guiqft/semantic-release-ftw/commit/6f34960a32d77a2cc493f7c8229087778e363956))
+* foo 2 ([0b0ba3e](https://github.com/Guiqft/semantic-release-ftw/commit/0b0ba3e51dfb930f4bd36cffa35823bd1a5c6f2b))
+* foo 3 ([7174dd5](https://github.com/Guiqft/semantic-release-ftw/commit/7174dd540e31c77ca3cefb44b4897e96a906ce0e))
+* foo 4 ([c2de780](https://github.com/Guiqft/semantic-release-ftw/commit/c2de780ba677594e9f5ba7ba9919648da9cb910b))
+* foo 5 ([9c95af2](https://github.com/Guiqft/semantic-release-ftw/commit/9c95af22ba812c0e38e543b02dbc605019b6400f))
+* qualquer coisa ([31f3193](https://github.com/Guiqft/semantic-release-ftw/commit/31f31932d5be008fa65be8230f7b3592e530e0b8))
+
+
+### Features
+
+* changing to 10 ([e2ad853](https://github.com/Guiqft/semantic-release-ftw/commit/e2ad8539f46152ce0eb7685084733bb32897bd53))
+* chefe ([ccb8932](https://github.com/Guiqft/semantic-release-ftw/commit/ccb8932d325c0a3c97ba755d03ad254d732c9831))
+* fix rebase ([9c9e5b6](https://github.com/Guiqft/semantic-release-ftw/commit/9c9e5b6ffb01e5c03876b9fc1ed9c073d258da13))
+* fix rebase 2 ([5bb667b](https://github.com/Guiqft/semantic-release-ftw/commit/5bb667b083a453a7510163c651cdf843307cc01d))
+
 # [1.1.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0...v1.1.0) (2023-11-21)
 
 
