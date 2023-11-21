@@ -1,3 +1,10 @@
+# [1.1.0-rc.7](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.6...v1.1.0-rc.7) (2023-11-21)
+
+
+### Features
+
+* my awesome feature ([ffc900f](https://github.com/Guiqft/semantic-release-ftw/commit/ffc900f9dc8eab753f02b3088165d4b5a8b80302))
+
 # [1.1.0-rc.6](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.5...v1.1.0-rc.6) (2023-11-21)
 
 
