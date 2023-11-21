@@ -2,8 +2,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # [1.2.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0) (2023-11-21)
 =======
+=======
+# [1.2.0-dev.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2023-11-21)
+
+
+### Features
+
+* new feat ([c955090](https://github.com/Guiqft/semantic-release-ftw/commit/c955090aae5ff31345c4d3d200f4bcae1958af18))
+
+>>>>>>> 658ba54 (chore(release): 1.2.0-dev.2 [skip ci])
 # [1.2.0-dev.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0-dev.1) (2023-11-21)
 
 
