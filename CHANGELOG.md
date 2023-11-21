@@ -1,3 +1,10 @@
+# [1.1.0-rc.13](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.12...v1.1.0-rc.13) (2023-11-21)
+
+
+### Bug Fixes
+
+* get correct branch name ([dd12633](https://github.com/Guiqft/semantic-release-ftw/commit/dd1263385eca504e373d70b217ea5cec5858245b))
+
 # [1.1.0-rc.12](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.11...v1.1.0-rc.12) (2023-11-21)
 
 
