@@ -1,7 +1,29 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # [1.2.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0) (2023-11-21)
+=======
+# [1.2.0-dev.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0-dev.1) (2023-11-21)
+
+
+### Bug Fixes
+
+* foo 4 ([835b837](https://github.com/Guiqft/semantic-release-ftw/commit/835b837163c207c8321da7d83c95f91cae9e9c3b))
+* really testing 13 ([395d03f](https://github.com/Guiqft/semantic-release-ftw/commit/395d03f1623a10a3024f00cbc7e708051227939c))
+
+
+### Features
+
+* another test ([#7](https://github.com/Guiqft/semantic-release-ftw/issues/7)) ([7f69d6a](https://github.com/Guiqft/semantic-release-ftw/commit/7f69d6a64a9f5782496906bcbac779885e1a319c))
+* releases? ([f75f979](https://github.com/Guiqft/semantic-release-ftw/commit/f75f979084911d0c19a19e6a86ef0816a504a6ed))
+* releases? ([91c2383](https://github.com/Guiqft/semantic-release-ftw/commit/91c238329760d0e5f5cedc6ad529641f3c5cb7f3))
+* testing 13 ([4408db9](https://github.com/Guiqft/semantic-release-ftw/commit/4408db9f15040c06da2c642840f70db5c1fef092))
+* update to testing 11 ([2092301](https://github.com/Guiqft/semantic-release-ftw/commit/2092301f11b46ed2672b49b0537b83d62dc04bce))
+* update to testing 12 ([f0d4724](https://github.com/Guiqft/semantic-release-ftw/commit/f0d472471870edd396519edf178ba58d93c5b572))
+
+# [1.1.0-dev.4](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-dev.3...v1.1.0-dev.4) (2023-11-20)
+>>>>>>> d7309ed (chore(release): 1.2.0-dev.1 [skip ci])
 
 
 ### Features
