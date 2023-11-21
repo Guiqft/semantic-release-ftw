@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0) (2023-11-21)
+
+
+### Features
+
+* releases? ([f75f979](https://github.com/Guiqft/semantic-release-ftw/commit/f75f979084911d0c19a19e6a86ef0816a504a6ed))
+* releases? ([91c2383](https://github.com/Guiqft/semantic-release-ftw/commit/91c238329760d0e5f5cedc6ad529641f3c5cb7f3))
+
 # [1.1.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0...v1.1.0) (2023-11-20)
 
 
