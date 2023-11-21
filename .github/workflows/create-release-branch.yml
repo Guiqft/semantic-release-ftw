@@ -40,8 +40,8 @@ jobs:
                   git config user.name github-actions
                   git config user.email github-actions@github.com
 
-                  git checkout origin/dev
-                  git pull origin dev
+                  git checkout origin/${GITHUB_REF##*/}
+                  git pull origin ${GITHUB_REF##*/}
                   git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }}
 
             - uses: oven-sh/setup-bun@v1
@@ -78,7 +78,10 @@ jobs:
                   if git show-ref --quiet refs/heads/$RELEASE_BRANCH; then
                     echo "Release branch $RELEASE_BRANCH already exists. Skipping branch creation."
                   else
-                    git branch $RELEASE_BRANCH ${{ github.head_ref }}
+                    git checkout origin/${GITHUB_REF##*/}
+                    git pull origin ${GITHUB_REF##*/}
+                    git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }}
+                    git branch $RELEASE_BRANCH ${GITHUB_REF##*/}
                     git push origin $RELEASE_BRANCH -f
                   fi
 
