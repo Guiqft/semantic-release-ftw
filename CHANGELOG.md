@@ -1,3 +1,14 @@
+# [1.2.0-dev.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.0-dev.2...v1.2.0-dev.3) (2023-11-21)
+
+
+### Features
+
+* 1234 ([5c93b6b](https://github.com/Guiqft/semantic-release-ftw/commit/5c93b6b6c8ad82333c8c230ef251ea3fe57bfe59))
+* 1234 ([d37ac98](https://github.com/Guiqft/semantic-release-ftw/commit/d37ac988687ffa66ab24c9e7d7c8a315b615a83d))
+* abcde ([b0418f9](https://github.com/Guiqft/semantic-release-ftw/commit/b0418f9d8f9a8a85c4d2d36fa741de3911cdab01))
+* new feat ([5bcfb41](https://github.com/Guiqft/semantic-release-ftw/commit/5bcfb418e2e43cf3d3673e95e6c9be377e6b8918))
+* test ([42edec1](https://github.com/Guiqft/semantic-release-ftw/commit/42edec19b36a840e870f40daea84c70a98948069))
+
 # [1.2.0-dev.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2023-11-21)
 
 
