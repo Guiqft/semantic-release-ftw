@@ -1,3 +1,10 @@
+# [1.1.0-rc.4](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.3...v1.1.0-rc.4) (2023-11-21)
+
+
+### Features
+
+* delete file ([bf0df93](https://github.com/Guiqft/semantic-release-ftw/commit/bf0df938947aaa0d9db4df9c70820c4fdb8f0da5))
+
 # [1.1.0-rc.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.2...v1.1.0-rc.3) (2023-11-21)
 
 
