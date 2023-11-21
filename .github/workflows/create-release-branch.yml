@@ -24,9 +24,9 @@ jobs:
               id: set-brach-name
               run: |
                   if [ "${{ github.event.inputs.releaseType }}" == "rc" ]; then
-                      echo "BRANCH_NAME=homolog" >> "$GITHUB_OUTPUT"
+                      echo "BRANCH_NAME=homolog" >> $GITHUB_OUTPUT
                   elif [ "${{ github.event.inputs.releaseType }}" == "latest" ]; then
-                      echo "BRANCH_NAME=main" >> "$GITHUB_OUTPUT"
+                      echo "BRANCH_NAME=main" >> $GITHUB_OUTPUT
                   fi
 
             - uses: actions/checkout@v4
@@ -34,6 +34,16 @@ jobs:
                   fetch-depth: 0
                   token: ${{ secrets.GH_TOKEN }}
                   ref: ${{ steps.set-brach-name.outputs.BRANCH_NAME }}
+
+            - name: Rebase
+              run: |
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com
+
+                  git checkout origin/dev
+                  git pull origin dev
+                  git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }}
+
             - uses: oven-sh/setup-bun@v1
               with:
                   bun-version: latest
