@@ -43,8 +43,8 @@ jobs:
                   echo "[DEBUG] current commits: "
                   git --no-pager log -10 --oneline
 
-                  echo "[DEBUG] checking out to origin/${GITHUB_REF#refs/heads/}"
-                  git checkout origin/${GITHUB_REF#refs/heads/}
+                  echo "[DEBUG] checking out to ${GITHUB_REF#refs/heads/}"
+                  git checkout ${GITHUB_REF#refs/heads/}
 
                   echo "[DEBUG] current commits: "
                   git --no-pager log -10 --oneline
@@ -108,15 +108,6 @@ jobs:
 
                   if git show-ref --quiet refs/heads/$VERSION_BRANCH; then
                     echo "Release branch $VERSION_BRANCH already exists. Skipping branch creation."
-
-                    if [[ "${GITHUB_REF#refs/heads/}" == *"release/"* || "${{ github.event.inputs.force-to-main }}" == "true" ]]; then
-                      git checkout origin/${GITHUB_REF#refs/heads/}
-                      git pull origin ${GITHUB_REF#refs/heads/}
-                      git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date
-
-                      git push origin ${GITHUB_REF#refs/heads/} -f
-                    fi
-
                   else
                     echo "[DEBUG] current branch: $(git rev-parse --abbrev-ref HEAD)"
                     echo "[DEBUG] current commits: "
