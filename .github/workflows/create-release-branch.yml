@@ -116,6 +116,7 @@ jobs:
                     --base ${{ needs.get-next-version.outputs.release-branch-name }} \
                     --head ${{ steps.set-release-branch.outputs.VERSION_BRANCH }} \
                     --title 'chore: release  v${{ needs.get-next-version.outputs.new-release-version }}' \
-                    --body 'This PR was automatically created by Github Actions'
+                    --body 'This PR was automatically created by Github Actions' \
+                  || true
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
