@@ -127,7 +127,8 @@ jobs:
                     echo "[DEBUG] creating branch $VERSION_BRANCH"
 
                     if [[ "${GITHUB_REF#refs/heads/}" != *"release/"* ]]; then
-                      git checkout $VERSION_BRANCH 2>/dev/null || git checkout -b $VERSION_BRANCH
+                      git branch -D $VERSION_BRANCH || true
+                      git checkout -b $VERSION_BRANCH
                     fi
                     git push origin $VERSION_BRANCH -f
                   fi
