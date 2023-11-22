@@ -1,3 +1,10 @@
+# [1.0.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2023-11-22)
+
+
+### Features
+
+* rewrites homolog ([e2d43ce](https://github.com/Guiqft/semantic-release-ftw/commit/e2d43ce624eb926f4bdf05e1fa4fa01e34873f00))
+
 # 1.0.0-rc.1 (2023-11-22)
 
 
