@@ -1,3 +1,10 @@
+# [1.0.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2023-11-22)
+
+
+### Features
+
+* my awesome feature to test ([b34c42b](https://github.com/Guiqft/semantic-release-ftw/commit/b34c42bd27835e420402d603281016c4b1cc8ba0))
+
 # 1.0.0-rc.1 (2023-11-22)
 
 
