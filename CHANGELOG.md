@@ -1,3 +1,10 @@
+# [1.0.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2023-11-22)
+
+
+### Bug Fixes
+
+* foo ([1122c4d](https://github.com/Guiqft/semantic-release-ftw/commit/1122c4d15f8e6e94f14dfa6188371c0b9256f988))
+
 # 1.0.0-rc.1 (2023-11-22)
 
 
