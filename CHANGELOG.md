@@ -1,3 +1,16 @@
+# [1.0.0-rc.5](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.4...v1.0.0-rc.5) (2023-11-22)
+
+
+### Bug Fixes
+
+* branch ([a5133b9](https://github.com/Guiqft/semantic-release-ftw/commit/a5133b924f37395964a7957de710362d3198b536))
+
+
+### Features
+
+* joker ([0ac31db](https://github.com/Guiqft/semantic-release-ftw/commit/0ac31db48762a83fce5801e0fe6144a5f0e1dc1e))
+* ops? ([278dc1e](https://github.com/Guiqft/semantic-release-ftw/commit/278dc1e5042c70e1dbcc3f6c3fb781e745342ff6))
+
 # 1.0.0 (2023-11-22)
 
 
