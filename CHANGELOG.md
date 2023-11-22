@@ -1,22 +1,53 @@
-# [1.0.0-rc.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2023-11-22)
+# 1.0.0 (2023-11-22)
 
 
 ### Bug Fixes
 
-* fetch correct branch ([c8c8e9a](https://github.com/Guiqft/semantic-release-ftw/commit/c8c8e9a64f2558e4e4f8be30cae8b63f5e922f18))
-* fetch correct branch 2 ([f1f010e](https://github.com/Guiqft/semantic-release-ftw/commit/f1f010eb95b18215da4957563a20c13f6c7ac7b9))
+* correct update package.json version ([e7bb11d](https://github.com/Guiqft/semantic-release-ftw/commit/e7bb11da8531f24a0b51b301cf7c3a141dfa1acf))
+* fetch correct branch ([d8f116d](https://github.com/Guiqft/semantic-release-ftw/commit/d8f116ddde5d3de47dd6cb4099f2f731ecb2c3e4))
+* fetch correct branch 2 ([f5b24e4](https://github.com/Guiqft/semantic-release-ftw/commit/f5b24e4e64b3b29992146924acb9d7e2a86d5115))
+* ignore if pr already exists ([0bfdec2](https://github.com/Guiqft/semantic-release-ftw/commit/0bfdec2a0815e9554832ff652dc9955ad9fcd758))
 
 
 ### Features
 
-* auto-update homolog branch ([a20bc27](https://github.com/Guiqft/semantic-release-ftw/commit/a20bc27784e868d0e093af26880a49bcac456912))
-
-# [1.0.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2023-11-22)
-
-
-### Features
-
+* auto-update homolog branch ([450714b](https://github.com/Guiqft/semantic-release-ftw/commit/450714bc312f09aef4f428bdf163b1334632ce3b))
+* hello world ([dca6dd5](https://github.com/Guiqft/semantic-release-ftw/commit/dca6dd587ffec8497744a92bf3b66ed1dffc00df))
+* initial commit ([7a9f52f](https://github.com/Guiqft/semantic-release-ftw/commit/7a9f52f2568f0fcd19d8cb4cadf362b16ba6fab0))
 * my awesome feature to test ([b34c42b](https://github.com/Guiqft/semantic-release-ftw/commit/b34c42bd27835e420402d603281016c4b1cc8ba0))
+
+# 1.0.0 (2023-11-22)
+
+
+### Bug Fixes
+
+* correct update package.json version ([e7bb11d](https://github.com/Guiqft/semantic-release-ftw/commit/e7bb11da8531f24a0b51b301cf7c3a141dfa1acf))
+* fetch correct branch ([d8f116d](https://github.com/Guiqft/semantic-release-ftw/commit/d8f116ddde5d3de47dd6cb4099f2f731ecb2c3e4))
+* fetch correct branch 2 ([f5b24e4](https://github.com/Guiqft/semantic-release-ftw/commit/f5b24e4e64b3b29992146924acb9d7e2a86d5115))
+* ignore if pr already exists ([0bfdec2](https://github.com/Guiqft/semantic-release-ftw/commit/0bfdec2a0815e9554832ff652dc9955ad9fcd758))
+
+
+### Features
+
+* auto-update homolog branch ([450714b](https://github.com/Guiqft/semantic-release-ftw/commit/450714bc312f09aef4f428bdf163b1334632ce3b))
+* hello world ([dca6dd5](https://github.com/Guiqft/semantic-release-ftw/commit/dca6dd587ffec8497744a92bf3b66ed1dffc00df))
+* initial commit ([7a9f52f](https://github.com/Guiqft/semantic-release-ftw/commit/7a9f52f2568f0fcd19d8cb4cadf362b16ba6fab0))
+* my awesome feature to test ([b34c42b](https://github.com/Guiqft/semantic-release-ftw/commit/b34c42bd27835e420402d603281016c4b1cc8ba0))
+
+# 1.0.0 (2023-11-22)
+
+
+### Bug Fixes
+
+* correct update package.json version ([7b53f3e](https://github.com/Guiqft/semantic-release-ftw/commit/7b53f3eaaac131f0e84ffc959c189862c464fb3e))
+* ignore if pr already exists ([b93fad4](https://github.com/Guiqft/semantic-release-ftw/commit/b93fad432c1272acbc49387ee1c1eb0b94124c8f))
+
+
+### Features
+
+* hello world ([970264d](https://github.com/Guiqft/semantic-release-ftw/commit/970264de2c32edefbce2540c71379b9d90dc3c5c))
+* initial commit ([7a9f52f](https://github.com/Guiqft/semantic-release-ftw/commit/7a9f52f2568f0fcd19d8cb4cadf362b16ba6fab0))
+* my awesome feature to test ([bfefa74](https://github.com/Guiqft/semantic-release-ftw/commit/bfefa748afbdf22115abf295f4eb173a8b2a6432))
 
 # 1.0.0-rc.1 (2023-11-22)
 
