@@ -45,7 +45,7 @@ jobs:
 
                   git fetch origin homolog
                   echo "[DEBUG] commits on homolog:"
-                  git --no-pager log -10 --oneline homolog
+                  git --no-pager log -10 --oneline origin/homolog
 
                   echo "[DEBUG] rebasing origin/homolog into $(git rev-parse --abbrev-ref HEAD)"
                   git rebase origin/homolog -X theirs --committer-date-is-author-date
