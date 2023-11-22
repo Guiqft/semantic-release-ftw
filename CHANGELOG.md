@@ -1,3 +1,16 @@
+# [1.0.0-rc.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2023-11-22)
+
+
+### Bug Fixes
+
+* fetch correct branch ([c8c8e9a](https://github.com/Guiqft/semantic-release-ftw/commit/c8c8e9a64f2558e4e4f8be30cae8b63f5e922f18))
+* fetch correct branch 2 ([f1f010e](https://github.com/Guiqft/semantic-release-ftw/commit/f1f010eb95b18215da4957563a20c13f6c7ac7b9))
+
+
+### Features
+
+* auto-update homolog branch ([a20bc27](https://github.com/Guiqft/semantic-release-ftw/commit/a20bc27784e868d0e093af26880a49bcac456912))
+
 # [1.0.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2023-11-22)
 
 
