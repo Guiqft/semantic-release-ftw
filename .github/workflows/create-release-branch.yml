@@ -50,7 +50,8 @@ jobs:
                   git --no-pager log -10 --oneline
 
                   echo "[DEBUG] rebasing origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} into $(git rev-parse --abbrev-ref HEAD)"
-                  git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} -X ours --committer-date-is-author-date
+                  git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} -X ours --committer-date-is-author-date --reapply-cherry-picks
+
 
                   echo "[DEBUG] current commits: "
                   git --no-pager log -10 --oneline
@@ -118,7 +119,7 @@ jobs:
 
 
                     echo "[DEBUG] rebasing origin/${{ needs.get-next-version.outputs.release-branch-name }} into $(git rev-parse --abbrev-ref HEAD)"
-                    git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date
+                    git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date --reapply-cherry-picks
                     
                     echo "[DEBUG] current commits: "
                     git --no-pager log -10 --oneline
