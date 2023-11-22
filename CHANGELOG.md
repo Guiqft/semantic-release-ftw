@@ -1,3 +1,16 @@
+# [1.0.0-rc.4](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.3...v1.0.0-rc.4) (2023-11-22)
+
+
+### Bug Fixes
+
+* ops ([1cf0fc0](https://github.com/Guiqft/semantic-release-ftw/commit/1cf0fc064f605f2ccdc581bf7f6d89e2c81f58af))
+* ops 2 ([233613a](https://github.com/Guiqft/semantic-release-ftw/commit/233613afc18585a7fa43e0eb7aa1466c5a7b0da5))
+
+
+### Features
+
+* foi? ([a66cd20](https://github.com/Guiqft/semantic-release-ftw/commit/a66cd2046881c2b801e573d59a950801ad5b68a3))
+
 # [1.0.0-rc.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2023-11-22)
 
 
