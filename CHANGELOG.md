@@ -1,3 +1,10 @@
+# [1.0.0-rc.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2023-11-22)
+
+
+### Features
+
+* agora vai? ([d774dbd](https://github.com/Guiqft/semantic-release-ftw/commit/d774dbd75cb61f43ded1ef49ce68672db29eea87))
+
 # [1.0.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2023-11-22)
 
 
