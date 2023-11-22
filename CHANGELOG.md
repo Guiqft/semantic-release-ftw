@@ -1,9 +1,10 @@
-# [1.0.0-rc.5](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.4...v1.0.0-rc.5) (2023-11-22)
+# [1.1.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0...v1.1.0) (2023-11-22)
 
 
 ### Features
 
-* adding debug to workflow ([d4f511b](https://github.com/Guiqft/semantic-release-ftw/commit/d4f511bade5300418099ebf3976e4bb540987c26))
+* adding debug to workflow ([a1d80cd](https://github.com/Guiqft/semantic-release-ftw/commit/a1d80cd9fbfba989260583c36097866a7f530550))
+* my new feature 2 ([298d95a](https://github.com/Guiqft/semantic-release-ftw/commit/298d95a8501db48fd170e0329fff6ebedcbdc05c))
 
 # [1.0.0-rc.4](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.3...v1.0.0-rc.4) (2023-11-22)
 
