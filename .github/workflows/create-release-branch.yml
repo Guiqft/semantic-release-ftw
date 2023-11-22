@@ -43,8 +43,8 @@ jobs:
                   echo "[DEBUG] current commits: "
                   git --no-pager log -10 --oneline
 
-                  echo "[DEBUG] checking out to ${GITHUB_REF#refs/heads/}"
-                  git checkout ${GITHUB_REF#refs/heads/}
+                  echo "[DEBUG] checking out to origin/${GITHUB_REF#refs/heads/}"
+                  git checkout origin/${GITHUB_REF#refs/heads/}
 
                   echo "[DEBUG] current commits: "
                   git --no-pager log -10 --oneline
