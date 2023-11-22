@@ -15,6 +15,11 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+                  ref: refs/heads/main
+                  token: ${{ secrets.GH_TOKEN }}
+
             - run: corepack enable
 
             - uses: oven-sh/setup-bun@v1
@@ -26,5 +31,23 @@ jobs:
 
             - name: Run semantic-release
               run: bunx semantic-release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+            - name: Update homolog branch
+              if: ${{ github.ref != 'refs/heads/homolog' }}
+              run: |
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com  
+
+                  git fetch origin homolog
+                  git rebase origin/homolog -X theirs --committer-date-is-author-date
+                  git push origin main -f
+
+                  gh pr create \
+                    --base homolog \
+                    --head main \
+                    --title 'chore: updates homolog environment' \
+                    --body 'This PR was automatically created by Github Actions'
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
