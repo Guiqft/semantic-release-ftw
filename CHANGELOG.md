@@ -1,3 +1,24 @@
+# 1.0.0-rc.1 (2023-11-22)
+
+
+### Bug Fixes
+
+* another something ([c424ab3](https://github.com/Guiqft/semantic-release-ftw/commit/c424ab3619a17c045864807c419f2474ad6b4caf))
+* another something ([477fe19](https://github.com/Guiqft/semantic-release-ftw/commit/477fe19f9aaa206b0c57febd86ebad294c851dc1))
+* fiz merda ([2622597](https://github.com/Guiqft/semantic-release-ftw/commit/26225975b66028ec5030c269eb23b1cfd639e277))
+* fiz merda 2 ([7ecbbf3](https://github.com/Guiqft/semantic-release-ftw/commit/7ecbbf357248d584692c9a3d2fe51e1eab7e3f8f))
+* my awesome fix ([a5b935b](https://github.com/Guiqft/semantic-release-ftw/commit/a5b935b5adbab4d9ae02de7dbedafd0e1be5819f))
+* need to fix this ([7e12f07](https://github.com/Guiqft/semantic-release-ftw/commit/7e12f07b85be238acb2086ad41bdc01a5af7fc40))
+
+
+### Features
+
+* initial commit ([8e3e2ae](https://github.com/Guiqft/semantic-release-ftw/commit/8e3e2ae504cd9a069c89ea032da6cfaf05dc5774))
+* my awesome feat ([bb2fe89](https://github.com/Guiqft/semantic-release-ftw/commit/bb2fe8933f38967febae2f7844b18b0b4a4e4ce2))
+* my feat ([e9db4a2](https://github.com/Guiqft/semantic-release-ftw/commit/e9db4a2445554463bb0513f33e1d452cccf7406e))
+* new feature ([3af414b](https://github.com/Guiqft/semantic-release-ftw/commit/3af414bccc63f7c30a89712d549f3fb54f55edc2))
+* rebase correct ([cfc20e5](https://github.com/Guiqft/semantic-release-ftw/commit/cfc20e511182b096617ca2aa029293aafce4b610))
+
 # [1.3.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.0...v1.3.0) (2023-11-22)
 
 
