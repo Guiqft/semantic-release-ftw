@@ -1,6 +1,18 @@
 # [1.0.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2023-11-22)
 
 
+### Bug Fixes
+
+* hello world ([c6b0b0e](https://github.com/Guiqft/semantic-release-ftw/commit/c6b0b0e9fd308b575ec968c9b70c1bf85bf56bb4))
+
+
+### Features
+
+* rewrites homolog ([70b7776](https://github.com/Guiqft/semantic-release-ftw/commit/70b77763c41f887ece8b6622545f36861e6c972a))
+
+# [1.0.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2023-11-22)
+
+
 ### Features
 
 * rewrites homolog ([e2d43ce](https://github.com/Guiqft/semantic-release-ftw/commit/e2d43ce624eb926f4bdf05e1fa4fa01e34873f00))
