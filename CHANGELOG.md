@@ -1,3 +1,10 @@
+# [1.0.0-rc.6](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.5...v1.0.0-rc.6) (2023-11-22)
+
+
+### Features
+
+* something 12345 ([836a7b4](https://github.com/Guiqft/semantic-release-ftw/commit/836a7b49e4a8801a5e66fb71056d5e5cd72af70f))
+
 # [1.0.0-rc.5](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0-rc.4...v1.0.0-rc.5) (2023-11-22)
 
 
