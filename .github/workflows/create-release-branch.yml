@@ -3,14 +3,10 @@ name: Create Release PR
 on:
     workflow_dispatch:
         inputs:
-            releaseType:
-                description: "Release Type"
-                required: true
-                default: "rc"
-                type: choice
-                options:
-                    - rc
-                    - latest
+            force-to-main:
+                type: boolean
+                default: false
+                description: This will ensure that your branch is released on the main branch, especially useful in emergency situations.
 
 permissions:
     pull-requests: write
@@ -23,10 +19,13 @@ jobs:
             - name: Set Branch Name
               id: set-brach-name
               run: |
-                  if [ "${{ github.event.inputs.releaseType }}" == "rc" ]; then
-                      echo "BRANCH_NAME=homolog" >> $GITHUB_OUTPUT
-                  elif [ "${{ github.event.inputs.releaseType }}" == "latest" ]; then
-                      echo "BRANCH_NAME=main" >> $GITHUB_OUTPUT
+                  if [[ "${GITHUB_REF#refs/heads/}" == *"release/"* || "${{ github.event.inputs.force-to-main }}" == "true" ]]; then
+                    echo "BRANCH_NAME=main" >> $GITHUB_OUTPUT
+                  elif [ "${GITHUB_REF#refs/heads/}" == "dev" ]; then
+                    echo "BRANCH_NAME=homolog" >> $GITHUB_OUTPUT
+                  else 
+                    echo "Invalid branch. Releases can only be triggered from 'dev' or 'release/*' branches."
+                    exit 1
                   fi
 
             - uses: actions/checkout@v4
@@ -52,14 +51,15 @@ jobs:
               run: bun i
 
             - name: Discover Next Version
-              run: |
-                  if [ "${GITHUB_REF#refs/heads/}" == *release/*  ]; then
-                      echo "new-release-published=true" >> $GITHUB_OUTPUT
-                      echo "new-release-version=vX.X.X" >> $GITHUB_OUTPUT
-                  else
-                      GITHUB_REF=${{ steps.set-brach-name.outputs.BRANCH_NAME }} bunx semantic-release --dry-run --no-ci
-                  fi
               id: get-next-version
+              run: |
+                  GITHUB_REF=${{ steps.set-brach-name.outputs.BRANCH_NAME }} bunx semantic-release --dry-run --no-ci
+              # if [[ "${GITHUB_REF#refs/heads/}" == *"release/"* || "${{ github.event.inputs.force-to-main }}" == "true" ]]; then
+              #     # echo "new-release-published=true" >> $GITHUB_OUTPUT
+              #     # echo "new-release-version=${GITHUB_REF#*release/v}" >> $GITHUB_OUTPUT
+              # else
+              #     GITHUB_REF=${{ steps.set-brach-name.outputs.BRANCH_NAME }} bunx semantic-release --dry-run --no-ci
+              # fi
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         outputs:
@@ -81,43 +81,40 @@ jobs:
               id: set-release-branch
               run: |
                   RAW_VERSION=$(echo ${{ needs.get-next-version.outputs.new-release-version }} | sed 's/-.*$//')
-                  echo "RELEASE_BRANCH=release/v$RAW_VERSION" >> $GITHUB_OUTPUT
+                  echo "VERSION_BRANCH=release/v$RAW_VERSION" >> $GITHUB_OUTPUT
 
             - name: Create Release Branch
               run: |
-                  RELEASE_BRANCH=${{ steps.set-release-branch.outputs.RELEASE_BRANCH }}
-                  if git show-ref --quiet refs/heads/$RELEASE_BRANCH; then
-                    echo "Release branch $RELEASE_BRANCH already exists. Skipping branch creation."
+                  VERSION_BRANCH=${{ steps.set-release-branch.outputs.VERSION_BRANCH }}
 
-                    if [ "${GITHUB_REF#refs/heads/}" == *release/*  ]; then
-                      git config user.name github-actions
-                      git config user.email github-actions@github.com
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com
 
+                  if git show-ref --quiet refs/heads/$VERSION_BRANCH; then
+                    echo "Release branch $VERSION_BRANCH already exists. Skipping branch creation."
+
+                    if [[ "${GITHUB_REF#refs/heads/}" == *"release/"* || "${{ github.event.inputs.force-to-main }}" == "true" ]]; then
                       git checkout origin/${GITHUB_REF#refs/heads/}
                       git pull origin ${GITHUB_REF#refs/heads/}
                       git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date
 
-                      git checkout -b ${GITHUB_REF#refs/heads/}
-                      git push origin ${GITHUB_REF#refs/heads/} -f  
+                      git push origin ${GITHUB_REF#refs/heads/} -f
                     fi
-                    
-                  else
-                    git config user.name github-actions
-                    git config user.email github-actions@github.com
 
+                  else
                     git checkout origin/${GITHUB_REF#refs/heads/}
                     git pull origin ${GITHUB_REF#refs/heads/}
                     git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date
 
-                    git checkout -b $RELEASE_BRANCH
-                    git push origin $RELEASE_BRANCH -f
+                    git checkout -b $VERSION_BRANCH
+                    git push origin $VERSION_BRANCH -f
                   fi
 
             - name: Create Pull Request
               run: |
                   gh pr create \
                     --base ${{ needs.get-next-version.outputs.release-branch-name }} \
-                    --head ${{ steps.set-release-branch.outputs.RELEASE_BRANCH }} \
+                    --head ${{ steps.set-release-branch.outputs.VERSION_BRANCH }} \
                     --title 'chore: release  v${{ needs.get-next-version.outputs.new-release-version }}' \
                     --body 'This PR was automatically created by Github Actions'
               env:
