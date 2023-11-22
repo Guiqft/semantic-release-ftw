@@ -48,7 +48,7 @@ jobs:
                   git --no-pager log -10 --oneline origin/homolog
 
                   echo "[DEBUG] rebasing origin/homolog into $(git rev-parse --abbrev-ref HEAD)"
-                  git rebase origin/homolog -X theirs --committer-date-is-author-date
+                  git rebase origin/homolog -X ours --committer-date-is-author-date
 
                   echo "[DEBUG] commits on $(git rev-parse --abbrev-ref HEAD) after rebase:"
                   git --no-pager log -10 --oneline
