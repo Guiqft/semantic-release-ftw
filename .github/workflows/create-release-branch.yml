@@ -39,10 +39,21 @@ jobs:
                   git config user.name github-actions
                   git config user.email github-actions@github.com
 
+                  echo "[DEBUG] current branch: $(git rev-parse --abbrev-ref HEAD)"
+                  echo "[DEBUG] current commits: "
+                  git --no-pager log -10 --oneline
+
+                  echo "[DEBUG] checking out to origin/${GITHUB_REF#refs/heads/}"
                   git checkout origin/${GITHUB_REF#refs/heads/}
-                  git pull origin ${GITHUB_REF#refs/heads/}
+
+                  echo "[DEBUG] current commits: "
+                  git --no-pager log -10 --oneline
+
+                  echo "[DEBUG] rebasing origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} into $(git rev-parse --abbrev-ref HEAD)"
                   git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} -X ours --committer-date-is-author-date
 
+                  echo "[DEBUG] current commits: "
+                  git --no-pager log -10 --oneline
             - uses: oven-sh/setup-bun@v1
               with:
                   bun-version: latest
@@ -53,6 +64,11 @@ jobs:
             - name: Discover Next Version
               id: get-next-version
               run: |
+                  echo "[DEBUG] release branch: ${{ steps.set-brach-name.outputs.BRANCH_NAME }}"
+
+                  echo "[DEBUG] current commits on release branch: "
+                  git --no-pager log -10 --oneline ${{ steps.set-brach-name.outputs.BRANCH_NAME }}
+
                   GITHUB_REF=${{ steps.set-brach-name.outputs.BRANCH_NAME }} bunx semantic-release --dry-run --no-ci
               # if [[ "${GITHUB_REF#refs/heads/}" == *"release/"* || "${{ github.event.inputs.force-to-main }}" == "true" ]]; then
               #     # echo "new-release-published=true" >> $GITHUB_OUTPUT
@@ -102,10 +118,21 @@ jobs:
                     fi
 
                   else
-                    git checkout origin/${GITHUB_REF#refs/heads/}
-                    git pull origin ${GITHUB_REF#refs/heads/}
-                    git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date
+                    echo "[DEBUG] current branch: $(git rev-parse --abbrev-ref HEAD)"
+                    echo "[DEBUG] current commits: "
+                    git --no-pager log -10 --oneline
 
+                    echo "[DEBUG] checking out to ${GITHUB_REF#refs/heads/}"
+                    git checkout ${GITHUB_REF#refs/heads/}
+
+
+                    echo "[DEBUG] rebasing origin/${{ needs.get-next-version.outputs.release-branch-name }} into $(git rev-parse --abbrev-ref HEAD)"
+                    git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date
+                    
+                    echo "[DEBUG] current commits: "
+                    git --no-pager log -10 --oneline
+
+                    echo "[DEBUG] creating branch $VERSION_BRANCH"
                     git checkout -b $VERSION_BRANCH
                     git push origin $VERSION_BRANCH -f
                   fi
