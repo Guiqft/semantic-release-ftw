@@ -133,7 +133,8 @@ jobs:
                     git --no-pager log -10 --oneline
 
                     echo "[DEBUG] creating branch $VERSION_BRANCH"
-                    git checkout $VERSION_BRANCH 2>/dev/null || git checkout -b $VERSION_BRANCH
+
+                    git branch -D $VERSION_BRANCH 2>/dev/null && git checkout -b $VERSION_BRANCH || git checkout -b $VERSION_BRANCH
                     git push origin $VERSION_BRANCH -f
                   fi
 
