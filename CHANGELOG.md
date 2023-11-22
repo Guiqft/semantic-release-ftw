@@ -14,6 +14,19 @@
 # 1.0.0 (2023-11-22)
 
 
+### Bug Fixes
+
+* my fix ([9cd2322](https://github.com/Guiqft/semantic-release-ftw/commit/9cd232299a172248a820014590a4f44ee32214c6))
+
+
+### Features
+
+* initial commit ([050092c](https://github.com/Guiqft/semantic-release-ftw/commit/050092c03cafd8fa79b78e4d76ec957b4e15b552))
+* my feat ([e960be4](https://github.com/Guiqft/semantic-release-ftw/commit/e960be4c5a8cf434439a55ca67a02b3991079148))
+
+# 1.0.0 (2023-11-22)
+
+
 ### Features
 
 * initial commit ([c178eff](https://github.com/Guiqft/semantic-release-ftw/commit/c178eff824046b0473300796beffab54a0693ce3))
