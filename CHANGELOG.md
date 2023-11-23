@@ -1,3 +1,10 @@
+# [1.3.0-rc.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.3.0-rc.2...v1.3.0-rc.3) (2023-11-23)
+
+
+### Bug Fixes
+
+* everything is ok ([81d9ac8](https://github.com/Guiqft/semantic-release-ftw/commit/81d9ac8f51df17fff1a3207fb2de100b3ed7d986))
+
 # [1.3.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.3.0-rc.1...v1.3.0-rc.2) (2023-11-23)
 
 
