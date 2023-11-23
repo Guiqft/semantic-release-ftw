@@ -1,3 +1,10 @@
+# 1.0.0 (2023-11-23)
+
+
+### Features
+
+* initial commit ([ceb9e37](https://github.com/Guiqft/semantic-release-ftw/commit/ceb9e376a1f611440bb496aab1e822b9a692afe6))
+
 # 1.0.0 (2023-11-22)
 
 
