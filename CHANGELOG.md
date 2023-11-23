@@ -1,3 +1,10 @@
+# [1.3.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.3.0-rc.1...v1.3.0-rc.2) (2023-11-23)
+
+
+### Features
+
+* delete branch after close previous prs ([970f02a](https://github.com/Guiqft/semantic-release-ftw/commit/970f02a972514b776127bb5085df7523840b1b9a))
+
 # [1.3.0-rc.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.3...v1.3.0-rc.1) (2023-11-23)
 
 
