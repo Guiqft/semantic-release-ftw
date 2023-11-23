@@ -103,3 +103,12 @@ jobs:
                   || true
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Close Previous Releases PRs
+              run: |
+                  gh pr list --json number,headRefName | jq -r '.[] | select(.headRefName | test("'"release/*"'")) | select(.headRefName != "${{ steps.set-release-branch.outputs.VERSION_BRANCH}}") | .number' | \
+                  while read -r pr_number; do
+                    gh pr close $pr_number
+                  done
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
