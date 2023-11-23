@@ -1,3 +1,18 @@
+# [1.3.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.3...v1.3.0) (2023-11-23)
+
+
+### Bug Fixes
+
+* everything is ok ([1e7575c](https://github.com/Guiqft/semantic-release-ftw/commit/1e7575c24e67a2c0abf0b421c27733592d65cc69))
+* removes gh_token ([e47f5ae](https://github.com/Guiqft/semantic-release-ftw/commit/e47f5ae45734fef52bdf37f5875694ae97793482))
+
+
+### Features
+
+* close previous releases prs ([fee0623](https://github.com/Guiqft/semantic-release-ftw/commit/fee06239de5cf4e662a95298766900eadd8b4898))
+* delete branch after close previous prs ([730310e](https://github.com/Guiqft/semantic-release-ftw/commit/730310ec78884749849908cf89e6f8d49bd0d379))
+* something here ([d4c6800](https://github.com/Guiqft/semantic-release-ftw/commit/d4c68001862c0c48b9bb34ce877b6b41ec1f3024))
+
 # [1.3.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.3.0-rc.1...v1.3.0-rc.2) (2023-11-23)
 
 
