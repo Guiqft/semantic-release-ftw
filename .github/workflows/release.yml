@@ -29,12 +29,13 @@ jobs:
               run: bun i
 
             - name: Run semantic-release
+              id: run-semantic-release
               run: bunx semantic-release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
             - name: Update homolog branch
-              if: ${{ github.ref != 'refs/heads/homolog' }}
+              if: ${{ github.ref != 'refs/heads/homolog' && steps.run-semantic-release.outputs.new-release-published == 'true' }}
               run: |
                   git branch -D homolog
                   git checkout -b homolog
