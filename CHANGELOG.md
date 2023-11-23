@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.2...v1.2.3) (2023-11-23)
+
+
+### Bug Fixes
+
+* remove logs ([3ed29eb](https://github.com/Guiqft/semantic-release-ftw/commit/3ed29eb5b7916de2cb129189bd0a79a61768545e))
+
 ## [1.2.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.1...v1.2.2) (2023-11-23)
 
 
