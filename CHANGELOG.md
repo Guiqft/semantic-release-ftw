@@ -1,3 +1,15 @@
+# [1.1.0-rc.3](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.2...v1.1.0-rc.3) (2023-11-23)
+
+
+### Bug Fixes
+
+* removes reapply cherrypicks ([62a09ec](https://github.com/Guiqft/semantic-release-ftw/commit/62a09ecd3ca16fc5f8ea43942527623982421532))
+
+
+### Features
+
+* my new feature ([0afe294](https://github.com/Guiqft/semantic-release-ftw/commit/0afe2945f42b8352b9ba261929fe2d78b303fc95))
+
 # [1.1.0-rc.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0-rc.1...v1.1.0-rc.2) (2023-11-23)
 
 
