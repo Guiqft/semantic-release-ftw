@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.0...v1.2.1) (2023-11-23)
+
+
+### Bug Fixes
+
+* correct delete release branch ([60d6556](https://github.com/Guiqft/semantic-release-ftw/commit/60d655613ea9590dc7644ded68cc9b426ff407b9))
+
 # [1.2.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0) (2023-11-23)
 
 
