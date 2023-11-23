@@ -1,3 +1,16 @@
+# 1.0.0 (2023-11-23)
+
+
+### Bug Fixes
+
+* removes this ([f95d257](https://github.com/Guiqft/semantic-release-ftw/commit/f95d257ea83afeddd69d25338734be28b7204864))
+
+
+### Features
+
+* initial commit ([ceb9e37](https://github.com/Guiqft/semantic-release-ftw/commit/ceb9e376a1f611440bb496aab1e822b9a692afe6))
+* testing again ([0b4b7e4](https://github.com/Guiqft/semantic-release-ftw/commit/0b4b7e458b8682d6b024898991170a2aa0c2cf47))
+
 # 1.0.0-rc.1 (2023-11-23)
 
 
