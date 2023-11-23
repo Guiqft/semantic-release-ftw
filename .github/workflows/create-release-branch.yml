@@ -31,7 +31,6 @@ jobs:
             - uses: actions/checkout@v4
               with:
                   fetch-depth: 0
-                  token: ${{ secrets.GH_TOKEN }}
                   ref: ${{ steps.set-brach-name.outputs.BRANCH_NAME }}
 
             - name: Rebase
@@ -52,7 +51,7 @@ jobs:
               id: get-next-version
               run: GITHUB_REF=${{ steps.set-brach-name.outputs.BRANCH_NAME }} bunx semantic-release --dry-run --no-ci
               env:
-                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         outputs:
             needs-release: ${{ steps.get-next-version.outputs.new-release-published }}
             new-release-version: ${{ steps.get-next-version.outputs.new-release-version }}
@@ -103,4 +102,4 @@ jobs:
                     --body 'This PR was automatically created by Github Actions' \
                   || true
               env:
-                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
