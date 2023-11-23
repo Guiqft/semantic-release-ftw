@@ -48,6 +48,6 @@ jobs:
               run: |
                   RAW_VERSION=$(echo ${{ steps.run-semantic-release.outputs.new-release-version }} | sed 's/-.*$//')
                   VERSION_BRANCH=release/v$RAW_VERSION
-                  (git branch -D release/v1.1.0 && git push origin foo -f) || true
+                  (git branch -D $VERSION_BRANCH && git push origin $VERSION_BRANCH -f) || true
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
