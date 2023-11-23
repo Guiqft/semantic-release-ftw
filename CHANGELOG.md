@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.3.0...v1.4.0) (2023-11-23)
+
+
+### Features
+
+* adds README.md ([8f8fe9c](https://github.com/Guiqft/semantic-release-ftw/commit/8f8fe9c222ea6e1244b2c6d1a47bab25cbe63104))
+
 # [1.3.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.2.3...v1.3.0) (2023-11-23)
 
 
