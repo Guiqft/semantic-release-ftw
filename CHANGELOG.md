@@ -1,3 +1,15 @@
+# [1.2.0-rc.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.1.0...v1.2.0-rc.1) (2023-11-23)
+
+
+### Bug Fixes
+
+* removes this line ([bbc9dba](https://github.com/Guiqft/semantic-release-ftw/commit/bbc9dbaa67983d3d7b9d447bf50f38eacdc721ef))
+
+
+### Features
+
+* my feat on dev ([920ee4d](https://github.com/Guiqft/semantic-release-ftw/commit/920ee4d84dd20fc489e7a273ce4352693dee87b2))
+
 # [1.1.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.0.0...v1.1.0) (2023-11-23)
 
 
