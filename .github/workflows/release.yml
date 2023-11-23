@@ -35,10 +35,19 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
             - name: Update homolog branch
-              if: ${{ github.ref != 'refs/heads/homolog' && steps.run-semantic-release.outputs.new-release-published == 'true' }}
+              if: ${{ github.ref == 'refs/heads/main' && steps.run-semantic-release.outputs.new-release-published == 'true' }}
               run: |
                   git branch -D homolog
                   git checkout -b homolog
                   git push origin homolog -f
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+            - name: Delete release branch
+              if: ${{ github.ref == 'refs/heads/main' && steps.run-semantic-release.outputs.new-release-published == 'true' }}
+              run: |
+                  RAW_VERSION=$(echo ${{ steps.run-semantic-release.outputs.new-release-version }} | sed 's/-.*$//')
+                  VERSION_BRANCH=release/v$RAW_VERSION"
+                  (git branch -D release/v1.1.0 && git push origin foo -f) || true
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

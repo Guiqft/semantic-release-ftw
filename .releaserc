@@ -38,8 +38,7 @@
                     {
                         "path": "dist/**"
                     }
-                ],
-                "draftRelease": true
+                ]
             }
         ]
     ]
