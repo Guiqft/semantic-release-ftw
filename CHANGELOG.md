@@ -1,3 +1,20 @@
+# [1.5.0-rc.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.4.0...v1.5.0-rc.1) (2023-11-25)
+
+
+### Bug Fixes
+
+* everything is ok ([0f8292e](https://github.com/Guiqft/semantic-release-ftw/commit/0f8292e59a75c136fb2bba24e76204e099eaf366))
+* removes this line ([f20c8b6](https://github.com/Guiqft/semantic-release-ftw/commit/f20c8b6c56f852658ffaeda4f6d52c9c3400a031))
+
+
+### Features
+
+* awesome feature ([a1418b1](https://github.com/Guiqft/semantic-release-ftw/commit/a1418b1e82de731d376c415b99b98f32db0ec95a))
+* my awesome feature ([1573f27](https://github.com/Guiqft/semantic-release-ftw/commit/1573f27ab7f19f0d58db8f13508eebff151db2af))
+* my new feature ([fdf0476](https://github.com/Guiqft/semantic-release-ftw/commit/fdf0476a5616cf9759c06b2bd223dfa1012456fe))
+* something here ([8246991](https://github.com/Guiqft/semantic-release-ftw/commit/8246991e0d78db7f4d57cad479713ba17774b00f))
+* testing again ([2c71b51](https://github.com/Guiqft/semantic-release-ftw/commit/2c71b51cbab945e5b2996a0865cf5d1756c3c2e7))
+
 # [1.4.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.3.0...v1.4.0) (2023-11-23)
 
 
