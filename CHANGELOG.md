@@ -1,3 +1,11 @@
+## [1.6.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.6.1...v1.6.2) (2023-11-27)
+
+
+### Bug Fixes
+
+* changes description ([e03bd86](https://github.com/Guiqft/semantic-release-ftw/commit/e03bd862906724c9fad7ae6d6844ded1e138c8df))
+* keeps empty commits ([461ddc1](https://github.com/Guiqft/semantic-release-ftw/commit/461ddc1eead473dd2b123bbd9f9a65211e563861))
+
 ## [1.6.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.6.0...v1.6.1) (2023-11-27)
 
 
