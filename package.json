@@ -5,7 +5,7 @@
     "repository": {
         "url": "https://github.com/Guiqft/semantic-release-ftw"
     },
-    "description": "Some description to test",
+    "description": "",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
