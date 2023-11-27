@@ -39,7 +39,7 @@ jobs:
                   git config user.email github-actions@github.com
 
                   git checkout origin/${GITHUB_REF#refs/heads/}
-                  git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} -X ours --committer-date-is-author-date --reapply-cherry-picks
+                  git rebase origin/${{ steps.set-brach-name.outputs.BRANCH_NAME }} -X ours --committer-date-is-author-date --empty=keep
             - uses: oven-sh/setup-bun@v1
               with:
                   bun-version: latest
@@ -84,7 +84,7 @@ jobs:
                     echo "Release branch $VERSION_BRANCH already exists. Skipping branch creation."
                   else
                     git checkout ${GITHUB_REF#refs/heads/}
-                    git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date --reapply-cherry-picks
+                    git rebase origin/${{ needs.get-next-version.outputs.release-branch-name }} -X ours --committer-date-is-author-date --empty=keep
                     
                     if [[ "${GITHUB_REF#refs/heads/}" != *"release/"* ]]; then
                       git branch -D $VERSION_BRANCH || true
