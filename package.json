@@ -1,6 +1,6 @@
 {
     "name": "semantic-release-ftw",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "private": "true",
     "repository": {
         "url": "https://github.com/Guiqft/semantic-release-ftw"
