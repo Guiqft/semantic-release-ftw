@@ -1,3 +1,15 @@
+# [1.6.0-rc.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.5.0...v1.6.0-rc.1) (2023-11-27)
+
+
+### Bug Fixes
+
+* shomething is happening ([ce1b5d9](https://github.com/Guiqft/semantic-release-ftw/commit/ce1b5d9d6b594f23cb383198509b538e34749e9a))
+
+
+### Features
+
+* something ([cf41c5b](https://github.com/Guiqft/semantic-release-ftw/commit/cf41c5b0cc046042214b191808dd615aac2122b3))
+
 # [1.5.0](https://github.com/Guiqft/semantic-release-ftw/compare/v1.4.0...v1.5.0) (2023-11-25)
 
 
