@@ -1,3 +1,10 @@
+## [1.6.3-rc.1](https://github.com/Guiqft/semantic-release-ftw/compare/v1.6.2...v1.6.3-rc.1) (2023-11-27)
+
+
+### Bug Fixes
+
+* removes package description ([5bd7ef7](https://github.com/Guiqft/semantic-release-ftw/commit/5bd7ef765d21adbc248500aa36d3feee2abe490f))
+
 ## [1.6.2](https://github.com/Guiqft/semantic-release-ftw/compare/v1.6.1...v1.6.2) (2023-11-27)
 
 
